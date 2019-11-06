@@ -7,6 +7,14 @@
 4 == Orange\
 5 == Green
 
+**Stuff To Do**
+  * M execution (U B D F cycle)
+  * I C W S edges switch on even numbers
+  * Scanning the Cube (to get numbers as output and fill a similar 2d array separate for edges and corners)
+  * Phases- Edges and Corners 
+  * Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done 
+  * At reality checks, choose an alphabet that hasn't been used yet
+
 **Original Configuration**
 * Corners
   * 0 : 0 4 1 A
@@ -35,7 +43,7 @@
   * 23: 5 1 4 X
 * Edges ( Basically Corners but excluding the 3rd element)
 
-**Corners**
+**Corners**\
 SWAP: R U' R' U' R U R' F' R U R' U' R' F R\
 A: Reality Check\
 B: R D' SWAP D R'\ 
@@ -62,7 +70,7 @@ V: F' R' SWAP R F\
 W: D2 F' SWAP F D2\
 X: D F' SWAP F D'
 
-**EDGES** 
+**EDGES**\
 A: M2\
 B: R' U R U' M2 U R' U' R\
 C: U2 M' U2 M'\

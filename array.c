@@ -13,7 +13,7 @@ int main(void)
     cube[7]  = {1, 4, 5, int(H)};
     cube[8]  = {2, 0, 1, int(I)};
     cube[9]  = {2, 3, 0, int(J)};
-    cube[10] = {2, 5, 3, int(K))};
+    cube[10] = {2, 5, 3, int(K)};
     cube[11] = {2, 1, 5, int(L)};
     cube[12] = {3, 0, 2, int(M)};
     cube[13] = {3, 4, 0, int(N)};
