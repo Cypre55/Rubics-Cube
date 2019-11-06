@@ -1,11 +1,11 @@
 # 123
 **Colour Coding**
-0 == Blue
-1 == White
-2 == Red
-3 == Yellow
-4 == Orange
-5 == Green
+0 == Blue\
+1 == White\
+2 == Red\
+3 == Yellow\
+4 == Orange\
+5 == Green\
 
 **Original Configuration**
 * Corners
@@ -67,54 +67,54 @@
 
 
 **Corners**
-SWAP: R U' R' U' R U R' F' R U R' U' R' F R
-A: Reality Check
-B: R D' SWAP D R' 
-C: F SWAP F'
-D: F R' SWAP R F'
-E: Reality Check
-F: F2 SWAP F2
-G: D2 R SWAP R' D2
-H: D2 SWAP D2
-I: F' D SWAP F D'
-J: R2 D' SWAP D R2
-K: D R SWAP R' D'
-L: D SWAP D'
-M: R' SWAP R
-N: R2 SWAP R2
-O: R SWAP R'
-P: SWAP
-Q: R' F SWAP F' R
-R: Reality Check
-S: D' R SWAP R' D
-T: D' SWAP D
-U: F' SWAP F
-V: F' R' SWAP R F
-W: D2 F' SWAP F D2
-X: D F' SWAP F D'
+SWAP: R U' R' U' R U R' F' R U R' U' R' F R\
+A: Reality Check\
+B: R D' SWAP D R'\ 
+C: F SWAP F'\
+D: F R' SWAP R F'\
+E: Reality Check\
+F: F2 SWAP F2\
+G: D2 R SWAP R' D2\
+H: D2 SWAP D2\
+I: F' D SWAP F D'\
+J: R2 D' SWAP D R2\
+K: D R SWAP R' D'\
+L: D SWAP D'\
+M: R' SWAP R\
+N: R2 SWAP R2\
+O: R SWAP R'\
+P: SWAP\
+Q: R' F SWAP F' R\
+R: Reality Check\
+S: D' R SWAP R' D\
+T: D' SWAP D\
+U: F' SWAP F\
+V: F' R' SWAP R F\
+W: D2 F' SWAP F D2\
+X: D F' SWAP F D'\
 
 **EDGES** 
-A: M2
-B: R' U R U' M2 U R' U' R
-C: U2 M' U2 M'
-D: L U' L' U M2 U' L U L'
-E: B L' B' M2 B L B'
-F: B L2 B' M2 B L2 B'
-G: B L B' M2 B L' N
-H: L B L' B' M2 B L B' L'
-I: D M' U R2 U' M U R2 U' D' M2
-J: U R U' M2 U R' U'
-K: Reality Check
-L: U' L' U M2 U' L U
-M: B' R B M2 B' R B
-N: R' B' R B M2 B' R' B R
-O: B' R' B M2 B' R B
-P: B' R2 B M2 B' R2 B
-Q: B' R B U R2 U' M2 U R2 U' B' R' B
-R: U' L U ​M2 U' L U
-S: M U2 M U2 
-T: U R' U' M2 U R U'
-U: Reality Check
-V: U R2 U' M2 U R2 U'
-W: Algorithm
-X: U' L2 U M2 U' L2 U
+A: M2\
+B: R' U R U' M2 U R' U' R\
+C: U2 M' U2 M'\
+D: L U' L' U M2 U' L U L'\
+E: B L' B' M2 B L B'\
+F: B L2 B' M2 B L2 B'\
+G: B L B' M2 B L' N\
+H: L B L' B' M2 B L B' L'\
+I: D M' U R2 U' M U R2 U' D' M2\
+J: U R U' M2 U R' U'\
+K: Reality Check\
+L: U' L' U M2 U' L U\
+M: B' R B M2 B' R B\
+N: R' B' R B M2 B' R' B R\
+O: B' R' B M2 B' R B\
+P: B' R2 B M2 B' R2 B\
+Q: B' R B U R2 U' M2 U R2 U' B' R' B\
+R: U' L U ​M2 U' L U\
+S: M2 D U R2 U' M' U R2 U' M D'\ 
+T: U R' U' M2 U R U'\
+U: Reality Check\
+V: U R2 U' M2 U R2 U'\
+W: M U2 M U2\
+X: U' L2 U M2 U' L2 U\
