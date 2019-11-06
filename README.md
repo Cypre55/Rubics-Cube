@@ -1,11 +1,11 @@
-# 123
-**Colour Coding**
+# Read Me
+**Colour Coding**\
 0 == Blue\
 1 == White\
 2 == Red\
 3 == Yellow\
 4 == Orange\
-5 == Green\
+5 == Green
 
 **Original Configuration**
 * Corners
@@ -34,37 +34,6 @@
   * 22: 5 4 3 W
   * 23: 5 1 4 X
 * Edges ( Basically Corners but excluding the 3rd element)
-  * 0 : 0 4 A
-  * 1 : 0 3 B
-  * 2 : 0 2 C
-  * 3 : 0 1 D
-  * 4 : 1 0 E
-  * 5 : 1 2 F
-  * 6 : 1 5 G
-  * 7 : 1 4 H
-  * 8 : 2 0 I
-  * 9 : 2 3 J
-  * 10: 2 5 K
-  * 11: 2 1 L
-  * 12: 3 0 M
-  * 13: 3 4 N
-  * 14: 3 5 O
-  * 15: 3 2 P
-  * 16: 4 0 Q
-  * 17: 4 1 R
-  * 18: 4 5 S
-  * 19: 4 3 T
-  * 20: 5 2 U
-  * 21: 5 3 V
-  * 22: 5 4 W
-  * 23: 5 1 X
-
-
-
-
-
-
-
 
 **Corners**
 SWAP: R U' R' U' R U R' F' R U R' U' R' F R\
@@ -91,7 +60,7 @@ T: D' SWAP D\
 U: F' SWAP F\
 V: F' R' SWAP R F\
 W: D2 F' SWAP F D2\
-X: D F' SWAP F D'\
+X: D F' SWAP F D'
 
 **EDGES** 
 A: M2\
@@ -117,4 +86,4 @@ T: U R' U' M2 U R U'\
 U: Reality Check\
 V: U R2 U' M2 U R2 U'\
 W: M U2 M U2\
-X: U' L2 U M2 U' L2 U\
+X: U' L2 U M2 U' L2 U
