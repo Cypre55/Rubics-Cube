@@ -8,12 +8,21 @@
 5 == Green
 
 **Stuff To Do**
-  * M execution (U B D F cycle)
+* Scanning the Cube - Ard program (to get numbers as output and fill a similar 2d array separate for edges and corners)
+  * Colour input is taken as rgb
+  * So have to calibrate the rgb value in the start
+  * then give 0-5 values
+  * write into a file
+* Algo generator - C program **(Old Pochmann method and M2 Method)**
+  * Read the input file and store into an array
+  * M execution (U B D F cycle) - Write Algo according to it, whether M was executed or not, A1 and A2, B1 and B2 so on.
   * I C W S edges switch on even numbers
-  * Scanning the Cube (to get numbers as output and fill a similar 2d array separate for edges and corners)
   * Phases- Edges and Corners 
   * Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done 
   * At reality checks, choose an alphabet that hasn't been used yet
+  * write the output into a file
+* Execution - Ard program
+  * Take the output file and run
 
 **Original Configuration**
 * Corners
