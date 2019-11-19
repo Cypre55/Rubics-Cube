@@ -1,5 +1,5 @@
 # Read Me
-Hello, I am ChaoticSaint46, a freshman at IIT KGP. This is the first-ever project I am hosting. It has always been my dream project to make a 3x3 Rubics Cube solver. I actually know how to solve the cube blindfolded. I would only have to study at the cube only once and I would generate a 20ish sequence of alphabets and then execute it. That is exactly how I want to make this solver. I can try my best at coding the algorithm generator, but i need help with the arduino programming.
+Hello, I am ChaoticSaint46, a freshman at IIT KGP. This is the first-ever project I am hosting. It has always been my dream project to make a 3x3 Rubics Cube solver. I actually know how to solve the cube blindfolded. I would only have to study the cube only once and I would generate a 20ish sequence of alphabets and then execute it. That is exactly how I want to make this solver. I can try my best at coding the algorithm generator, but i need help with the arduino programming.
 For the principle of blindfold solving, please watch the following video: https://www.youtube.com/watch?v=A64Sy4WKiWY&t=130s
 
 **Colour Coding**\
