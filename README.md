@@ -1,4 +1,7 @@
 # Read Me
+Hello, I am ChaoticSaint46, a freshman at IIT KGP. This is the first-ever project I am hosting. It has always been my dream project to make a 3x3 Rubics Cube solver. I actually know how to solve the cube blindfolded. I would only have to study at the cube only once and I would generate a 20ish sequence of alphabets and then execute it. That is exactly how I want to make this solver. I can try my best at coding the algorithm generator, but i need help with the arduino programming.
+For the principle of blindfold solving, please watch the following video: https://www.youtube.com/watch?v=A64Sy4WKiWY&t=130s
+
 **Colour Coding**\
 0 == Blue\
 1 == White\
@@ -8,7 +11,7 @@
 5 == Green
 
 **Stuff To Do**
-* Scanning the Cube - Ard program (to get numbers as output and fill a similar 2d array separate for edges and corners)
+* Scanning the Cube - Arduino program (to get numbers as output and fill a similar 2d array separate for edges and corners)
   * Colour input is taken as rgb
   * So have to calibrate the rgb value in the start
   * then give 0-5 values
@@ -21,11 +24,11 @@
   * Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done 
   * At reality checks, choose an alphabet that hasn't been used yet
   * write the output into a file
-* Execution - Ard program
+* Execution - Arduino program
   * Take the output file and run
 
-**Original Configuration**
-* Corners
+**Original Configuration**(Describing a solved Cube)
+* Corners (colours taken in anticlockwise manner and labeled)
   * 0 : 0 4 1 A
   * 1 : 0 3 4 B
   * 2 : 0 2 3 C
@@ -79,7 +82,7 @@ V: F' R' SWAP R F\
 W: D2 F' SWAP F D2\
 X: D F' SWAP F D'
 
-**EDGES**\
+**EDGES(Incorrect, Needs to be changed)**\
 A: M2\
 B: R' U R U' M2 U R' U' R\
 C: U2 M' U2 M'\
