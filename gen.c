@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "lib.h"
+#include "input.h"
+#include "array.h"
+
 
 void checkcor(int a, int cor[][3], int cube1[][4], int arr[][2], int d);
 
@@ -20,6 +22,18 @@ int main(void)
 	cub(cube1, cube2);
 	input(edge, cor);
 	int n = 0;
+	for (int i = 0; i < 24; i++)
+	{
+		if(i != 0 && i!= 17 && i != 4)
+		{
+			if (cube1[i][0] == cor[i][0] && cube1[i][1] == cor[i][1] && cube1[i][2] == cor[i][2])
+			{
+				cube1[i][0] = 7;
+				cube1[i][1] = 7;
+				cube1[i][2] = 7;
+			}
+		}
+	}
 	for (int i = 0; i < 24; i++)
 	{
 		if (i == 0)
@@ -55,6 +69,7 @@ void checkcor(int a, int cor[][3], int cube1[][4], int arr[][2], int d)
 				arr[d][0] = i;
 				arr[d][1] = cube1[i][3];
 				cube1[i][0] = 7;
+				cube1[i][1] = 7;
 				cube1[i][2] = 7;
 				break;
 			}
@@ -64,12 +79,14 @@ void checkcor(int a, int cor[][3], int cube1[][4], int arr[][2], int d)
 				{
 					if  (cube1[k][0] != 7 && cube1[k][1] != 7 && cube1[k][2] != 7 && k != 0 && k!= 17 && k != 4)
 					{
-						arr[d][0] = cube1[k][0];
+						arr[d][0] = k;
 						arr[d][1] = cube1[k][3];
+						
 						break;
 					}
 					k++;
 				}
+				break;
 			}
 		}
 
