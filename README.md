@@ -1,6 +1,7 @@
 # Read Me
 Hello, I am ChaoticSaint46, a freshman at IIT KGP. This is the first-ever project I am hosting. It has always been my dream project to make a 3x3 Rubics Cube solver. I actually know how to solve the cube blindfolded. I would only have to study the cube once and I would generate a 20ish sequence of alphabets and then execute it. That is exactly how I want to make this solver. I can try my best at coding the algorithm generator, but i need help with the arduino programming.
 For the principle of blindfold solving, please watch the following video: https://www.youtube.com/watch?v=A64Sy4WKiWY&t=130s
+Update: There has been a change of plan. The project is just about generating a solution and not actuating the movements
 
 **Colour Coding**\
 0 == Blue\
@@ -11,21 +12,17 @@ For the principle of blindfold solving, please watch the following video: https:
 5 == Green
 
 **Stuff To Do**
-* Scanning the Cube - Arduino program (to get numbers as output and fill a similar 2d array separate for edges and corners)
-  * Colour input is taken as rgb
-  * So have to calibrate the rgb value in the start
-  * then give 0-5 values
-  * write into a file
 * Algo generator - C program **(Old Pochmann method and M2 Method)**
-  * Read the input file and store into an array
-  * M execution (U B D F cycle) - Write Algo according to it, whether M was executed or not, A1 and A2, B1 and B2 so on.
-  * I C W S edges switch on even numbers
-  * Phases- Edges and Corners 
-  * Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done 
-  * At reality checks, choose an alphabet that hasn't been used yet
-  * write the output into a file
-* Execution - Arduino program
-  * Take the output file and run
+  * [x] Read the input file and store into an array
+  * [x] I C W S edges switch on even numbers
+  * [ ] Phases- Edges and Corners
+  * [ ] Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done
+  * [ ] At reality checks, choose an alphabet that hasn't been used yet
+  * [ ] write the output into a file
+
+**Future Work**
+* Lower no. of moves taken, Optimise
+* Physical Solver
 
 **Original Configuration**(Describing a solved Cube)
 * Corners (colours taken in anticlockwise manner and labeled)
@@ -55,10 +52,13 @@ For the principle of blindfold solving, please watch the following video: https:
   * 23: 5 1 4 X
 * Edges ( Basically Corners but excluding the 3rd element)
 
+**Parity**\
+D' L2 D R2 L2 U' L2 U
+
 **Corners**\
 SWAP: R U' R' U' R U R' F' R U R' U' R' F R\
 A: Reality Check\
-B: R D' SWAP D R'\ 
+B: R D' SWAP D R'\
 C: F SWAP F'\
 D: F R' SWAP R F'\
 E: Reality Check\
@@ -82,28 +82,51 @@ V: F' R' SWAP R F\
 W: D2 F' SWAP F D2\
 X: D F' SWAP F D'
 
-**EDGES(Incorrect, Needs to be changed)**\
-A: M2\
-B: R' U R U' M2 U R' U' R\
-C: U2 M' U2 M'\
-D: L U' L' U M2 U' L U L'\
-E: B L' B' M2 B L B'\
-F: B L2 B' M2 B L2 B'\
-G: B L B' M2 B L' N\
-H: L B L' B' M2 B L B' L'\
-I: D M' U R2 U' M U R2 U' D' M2\
-J: U R U' M2 U R' U'\
-K: Reality Check\
-L: U' L' U M2 U' L U\
-M: B' R B M2 B' R B\
-N: R' B' R B M2 B' R' B R\
-O: B' R' B M2 B' R B\
-P: B' R2 B M2 B' R2 B\
-Q: B' R B U R2 U' M2 U R2 U' B' R' B\
-R: U' L U ​M2 U' L U\
-S: M2 D U R2 U' M' U R2 U' M D'\ 
-T: U R' U' M2 U R U'\
-U: Reality Check\
-V: U R2 U' M2 U R2 U'\
-W: M U2 M U2\
-X: U' L2 U M2 U' L2 U
+**EDGES**\
+Basically, Edges when executed pair restore the middle slice back to original form. In our case, we cannot rotate
+"a": "R R L L",
+"A": "R R L L",
+"b": "R' D R D' R R L L U R' U' R",
+"B": "R' U R U' R R L L D R' D' R",
+"c": "D D R' L B B R' L",
+"C": "U U R' L F F R' L",
+"d": "L D' L' D R R L L U' L U L'",
+"D": "L U' L' U R R L L D' L D L'",
+"e": "F L' F' R R L L B L B'",
+"E": "B L' B' R R L L F L F'",
+"f": "F L L F' R R L L B L L B'",
+"F": "B L L B' R R L L F L L F'",
+"g": "F L F' R R L L B L' B'",
+"G": "B L B' R R L L F L' F'",
+"h": "L F L' F' R R L L B L B' L'",
+"H": "L B L' B' R R L L F L F' L'",
+"i": "U R' L B R R B' R L' D R R D' U' R R L L",
+"I": "D R' L F R R F' R L' U R R U' D' R R L L",
+"j": "D R D' R R L L U R' U'",
+"J": "U R U' R R L L D R' D'",
+"K": "Reality Check",
+"l": "D' L' D R R L L U' L U",
+"L": "U' L' U R R L L D' L D",
+"m": "F' R F R R L L B' R B",
+"M": "B' R B R R L L F' R F",
+"n": "R' F' R F R R L L B' R' B R",
+"N": "R' B' R B R R L L F' R' F R",
+"o": "F' R' F R R L L B' R B",
+"O": "B' R' B R R L L F' R F",
+"p": "F' R R F R R L L B' R R B",
+"P": "B' R R B R R L L F' R R F",
+"q": "F' R F D R R D' R R L L U R R U' B' R' B",
+"Q": "B' R B U R R U' R R L L D R R D' F' R' F",
+"r": "D' L D R R L L U' L U",
+"R": "U' L U R R L L D' L D",
+"s": "R R L L D U R R U' R' L F R R F' R L' D'",
+"S": "R R L L U D R R D' R' L B R R B' R L' U'",
+"t": "D R' D' R R L L U R U'",
+"T": "U R' U' R R L L D R D'",
+"U": "Reality Check",
+"v": "D R R D' R R L L U R R U'",
+"V": "U R R U' R R L L D R R D'",
+"w": "R L' F F R L' U U",
+"W": "R L' B B R L' D D",
+"x": "D' L L D R R L L U' L L U",
+"X": "U' L L U R R L L D' L L D"
