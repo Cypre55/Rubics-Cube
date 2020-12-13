@@ -1,6 +1,6 @@
 # Rubik's Cube Solver
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com) \
 For the principle of blindfold solving, please watch the following video: https://www.youtube.com/watch?v=A64Sy4WKiWY&t=130s
 Update: There has been a change of plan. The project is just about generating a solution and not actuating the movements
 
