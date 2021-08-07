@@ -93,3 +93,5 @@ for move in edgeLine:
 with open("moves.txt", "w") as f:
     f.writelines(moves)
 
+print("Moves saved to moves.txt")
+

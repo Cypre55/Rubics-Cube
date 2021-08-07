@@ -38,13 +38,14 @@ int input(int edge[][2], int cor[][3])
         {7, 18, 23},
     };
 
-    printf("Input the colors in a clockwise direction starting from top-left (excluding the center) of the following faces in the mentioned configurations:\n");
+    printf("Input the colors in a clockwise direction starting from top-left (excluding the center) of the following faces in the mentioned configurations\n");
     printf("\tBlue   : Red on bottom\n");
     printf("\tWhite  : Green on bottom\n");
     printf("\tRed    : Green on bottom\n");
     printf("\tYellow : Green on bottom\n");
     printf("\tOrange : Green on bottom\n");
     printf("\tGreen  : Orange on bottom\n");
+    printf("The color codes are [ 0:Blue, 1:White, 2:Red, 3:Yellow, 4:Orange, 5:Green ]:\n");
     for (int i = 0; i < 24; i++)
     {
         scanf("%i", &cor[i][0]);

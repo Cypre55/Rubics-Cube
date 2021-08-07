@@ -4,6 +4,9 @@
 For the principle of blindfold solving, please watch the following video: https://www.youtube.com/watch?v=A64Sy4WKiWY&t=130s
 Update: There has been a change of plan. The project is just about generating a solution and not actuating the movements
 
+**Usage**\
+Use `make -s`\
+
 **Colour Coding**\
 0 == Blue\
 1 == White\
@@ -13,45 +16,48 @@ Update: There has been a change of plan. The project is just about generating a 
 5 == Green
 
 **Stuff To Do**
-* Algo generator - C program **(Old Pochmann method and M2 Method)**
-  * [x] Read the input file and store into an array
-  * [x] I C W S edges switch on even numbers
-  * [x] Phases- Edges and Corners
-  * [x] Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done
-  * [x] At reality checks, choose an alphabet that hasn't been used yet
-  * [x] write the output into a file
+
+- Algo generator - C program **(Old Pochmann method and M2 Method)**
+  - [x] Read the input file and store into an array
+  - [x] I C W S edges switch on even numbers
+  - [x] Phases- Edges and Corners
+  - [x] Compare the cube[] with unsolvedcube[] and note the alphabet and remember that it's done
+  - [x] At reality checks, choose an alphabet that hasn't been used yet
+  - [x] write the output into a file
 
 **Future Work**
-* Lower no. of moves taken, Optimise
-* Physical Solver
+
+- Lower no. of moves taken, Optimise
+- Physical Solver
 
 **Original Configuration**(Describing a solved Cube)
-* Corners (colours taken in anticlockwise manner and labeled)
-  * 0 : 0 4 1 A
-  * 1 : 0 3 4 B
-  * 2 : 0 2 3 C
-  * 3 : 0 1 2 D
-  * 4 : 1 0 4 E
-  * 5 : 1 2 0 F
-  * 6 : 1 5 2 G
-  * 7 : 1 4 5 H
-  * 8 : 2 0 1 I
-  * 9 : 2 3 0 J
-  * 10: 2 5 3 K
-  * 11: 2 1 5 L
-  * 12: 3 0 2 M
-  * 13: 3 4 0 N
-  * 14: 3 5 4 O
-  * 15: 3 2 5 P
-  * 16: 4 0 3 Q
-  * 17: 4 1 0 R
-  * 18: 4 5 1 S
-  * 19: 4 3 5 T
-  * 20: 5 2 1 U
-  * 21: 5 3 2 V
-  * 22: 5 4 3 W
-  * 23: 5 1 4 X
-* Edges ( Basically Corners but excluding the 3rd element)
+
+- Corners (colours taken in anticlockwise manner and labeled)
+  - 0 : 0 4 1 A
+  - 1 : 0 3 4 B
+  - 2 : 0 2 3 C
+  - 3 : 0 1 2 D
+  - 4 : 1 0 4 E
+  - 5 : 1 2 0 F
+  - 6 : 1 5 2 G
+  - 7 : 1 4 5 H
+  - 8 : 2 0 1 I
+  - 9 : 2 3 0 J
+  - 10: 2 5 3 K
+  - 11: 2 1 5 L
+  - 12: 3 0 2 M
+  - 13: 3 4 0 N
+  - 14: 3 5 4 O
+  - 15: 3 2 5 P
+  - 16: 4 0 3 Q
+  - 17: 4 1 0 R
+  - 18: 4 5 1 S
+  - 19: 4 3 5 T
+  - 20: 5 2 1 U
+  - 21: 5 3 2 V
+  - 22: 5 4 3 W
+  - 23: 5 1 4 X
+- Edges ( Basically Corners but excluding the 3rd element)
 
 **Parity**\
 D' L2 D R2 L2 U' L2 U
