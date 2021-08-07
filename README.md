@@ -85,49 +85,49 @@ X: D F' SWAP F D'
 
 **EDGES**\
 Basically, Edges when executed pair restore the middle slice back to original form. In our case, we cannot rotate it. The lowercase algorithms are for when middle slice is inverted and uppercase is for when it is not.
-a: R R L L,\
-A: R R L L,\
-b: R' D R D' R R L L U R' U' R,\
-B: R' U R U' R R L L D R' D' R,\
-c: D D R' L B B R' L,\
-C: U U R' L F F R' L,\
-d: L D' L' D R R L L U' L U L',\
-D: L U' L' U R R L L D' L D L',\
-e: F L' F' R R L L B L B',\
-E: B L' B' R R L L F L F',\
-f: F L L F' R R L L B L L B',\
-F: B L L B' R R L L F L L F',\
-g: F L F' R R L L B L' B',\
-G: B L B' R R L L F L' F',\
-h: L F L' F' R R L L B L B' L',\
-H: L B L' B' R R L L F L F' L',\
-i: U R' L B R R B' R L' D R R D' U' R R L L,\
-I: D R' L F R R F' R L' U R R U' D' R R L L,\
-j: D R D' R R L L U R' U',\
-J: U R U' R R L L D R' D',\
-K: Reality Check,\
-l: D' L' D R R L L U' L U,\
-L: U' L' U R R L L D' L D,\
-m: F' R F R R L L B' R B,\
-M: B' R B R R L L F' R F,\
-n: R' F' R F R R L L B' R' B R,\
-N: R' B' R B R R L L F' R' F R,\
-o: F' R' F R R L L B' R B,\
-O: B' R' B R R L L F' R F,\
-p: F' R R F R R L L B' R R B,\
-P: B' R R B R R L L F' R R F,\
-q: F' R F D R R D' R R L L U R R U' B' R' B,\
-Q: B' R B U R R U' R R L L D R R D' F' R' F,\
-r: D' L D R R L L U' L U,\
-R: U' L U R R L L D' L D,\
-s: R R L L D U R R U' R' L F R R F' R L' D',\
-S: R R L L U D R R D' R' L B R R B' R L' U',\
-t: D R' D' R R L L U R U',\
-T: U R' U' R R L L D R D',\
-U: Reality Check,\
-v: D R R D' R R L L U R R U',\
-V: U R R U' R R L L D R R D',\
-w: R L' F F R L' U U,\
-W: R L' B B R L' D D,\
-x: D' L L D R R L L U' L L U,\
+a: R R L L\
+A: R R L L\
+b: R' D R D' R R L L U R' U' R\
+B: R' U R U' R R L L D R' D' R\
+c: D D R' L B B R' L\
+C: U U R' L F F R' L\
+d: L D' L' D R R L L U' L U L'\
+D: L U' L' U R R L L D' L D L'\
+e: F L' F' R R L L B L B'\
+E: B L' B' R R L L F L F'\
+f: F L L F' R R L L B L L B'\
+F: B L L B' R R L L F L L F'\
+g: F L F' R R L L B L' B'\
+G: B L B' R R L L F L' F'\
+h: L F L' F' R R L L B L B' L'\
+H: L B L' B' R R L L F L F' L'\
+i: U R' L B R R B' R L' D R R D' U' R R L L\
+I: D R' L F R R F' R L' U R R U' D' R R L L\
+j: D R D' R R L L U R' U'\
+J: U R U' R R L L D R' D'\
+K: Reality Check\
+l: D' L' D R R L L U' L U\
+L: U' L' U R R L L D' L D\
+m: F' R F R R L L B' R B\
+M: B' R B R R L L F' R F\
+n: R' F' R F R R L L B' R' B R\
+N: R' B' R B R R L L F' R' F R\
+o: F' R' F R R L L B' R B\
+O: B' R' B R R L L F' R F\
+p: F' R R F R R L L B' R R B\
+P: B' R R B R R L L F' R R F\
+q: F' R F D R R D' R R L L U R R U' B' R' B\
+Q: B' R B U R R U' R R L L D R R D' F' R' F\
+r: D' L D R R L L U' L U\
+R: U' L U R R L L D' L D\
+s: R R L L D U R R U' R' L F R R F' R L' D'\
+S: R R L L U D R R D' R' L B R R B' R L' U'\
+t: D R' D' R R L L U R U'\
+T: U R' U' R R L L D R D'\
+U: Reality Check\
+v: D R R D' R R L L U R R U'\
+V: U R R U' R R L L D R R D'\
+w: R L' F F R L' U U\
+W: R L' B B R L' D D\
+x: D' L L D R R L L U' L L U\
 X: U' L L U R R L L D' L L D

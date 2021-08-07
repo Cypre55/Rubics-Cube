@@ -10,7 +10,8 @@ int cube_check(int cor[24][3], int cor_comb[8][3], int edge[24][2], int edge_com
 int main(void)
 {
 	FILE* fptr;
-	fptr = fopen("/home/chaoticsaint/Desktop/Projects/Rubics-Cube/MagicCube/code/sols.txt","w");
+	fptr = fopen("/home/chaoticsaint/Desktop/Projects/Rubics-Cube/sols.txt","w");
+	
 	// Solved status of Cube
 	int cube[24][4] = {
 							{0, 4, 1, 'A'},
@@ -41,6 +42,7 @@ int main(void)
 
 	int edge[24][2];
 	int cor[24][3];
+	
 	// Pair of edges on the same piece
 	int edge_comb[12][2] = {
 							{0, 16},
@@ -76,6 +78,7 @@ int main(void)
 	int cor_sum = 0;
 	int edge_sum = 0;
 	int parity = 0;
+	
 	for (int i = 0; i < 24; i++)
 	{
 		cor_sol[i] = (char)0;
@@ -85,25 +88,24 @@ int main(void)
 	input(edge, cor);
 	int t = cube_check(cor, cor_comb, edge, edge_comb, cube);
 
-    if (t == 0)
-    {
-        printf("Valid Cube Configuration!\n");
-    }
-    else if (t == 1)
-    {
-        printf("Invalid Edge Configuration\n");
-		return 1;
-    }
-    else if (t == 2)
-    {
-        printf("Invalid Corner Configuration\n");
-		return 1;
-    }
-    else if (t == 3)
-    {
-        printf("Invalid Edge and Corner Configuration\n");
-		return 1;
-    }
+    switch(t)
+	{
+		case 0:
+			printf("Valid Cube Configuration!\n");
+			break;
+		case 1:
+			printf("Invalid Edge Configuration\n");
+			return 1;
+			break;
+		case 2:
+			printf("Invalid Corner Configuration\n");
+			return 1;
+			break;
+		case 3:
+			printf("Invalid Edge and Corner Configuration\n");
+			return 1;
+			break;
+		}
 
 	// printf("%d %d\n", edge[7][0], edge[7][1]);
 

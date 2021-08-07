@@ -1,3 +1,6 @@
+#ifndef EDGE_H
+#define EDGE_H
+
 #include <stdio.h>
 
 int is_buffer_edge(int curr_edge[2])
@@ -116,3 +119,4 @@ char edge_move(int i, int n, int parity)
 			return (char)(97 + t);
 	}
 }
+#endif

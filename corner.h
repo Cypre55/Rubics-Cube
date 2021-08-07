@@ -1,3 +1,6 @@
+#ifndef CORNER_H
+#define CORNER_H
+
 int is_buffer_cor(int curr_cor[3])
 {
 	if (curr_cor[0] == 0 && curr_cor[1] == 4 && curr_cor[2] == 1)
@@ -80,3 +83,4 @@ void cor_swap(int cor[24][3], int a, int b, int cor_comb[8][3])
 		}
 	}
 }
+#endif
