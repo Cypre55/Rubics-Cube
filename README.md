@@ -5,7 +5,7 @@ For the principle of blindfold solving, please watch the following video: https:
 Update: There has been a change of plan. The project is just about generating a solution and not actuating the movements
 
 **Usage**\
-Use `make -s`\
+Use `make -s`
 
 **Colour Coding**\
 0 == Blue\
