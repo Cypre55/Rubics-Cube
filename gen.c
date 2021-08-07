@@ -10,7 +10,7 @@ int cube_check(int cor[24][3], int cor_comb[8][3], int edge[24][2], int edge_com
 int main(void)
 {
 	FILE* fptr;
-	fptr = fopen("/home/chaoticsaint/Desktop/Projects/Rubics-Cube/sols.txt","w");
+	fptr = fopen("sols.txt","w");
 	
 	// Solved status of Cube
 	int cube[24][4] = {

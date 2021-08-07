@@ -1,3 +1,6 @@
+#ifndef INPUT_H
+#define INPUT_H
+
 #include <stdio.h>
 // [0: Blue, 1: White, 2: Red, 3: Yellow, 4: Orange, 5: Green]
 
@@ -10,31 +13,38 @@
 int input(int edge[][2], int cor[][3])
 {
     int edge_comb[12][2] = {
-							{0, 16},
-							{1, 12},
-							{2, 8},
-							{3, 4},
-							{5, 11},
-							{9, 15},
-							{13, 19},
-							{7, 17},
-							{10, 20},
-							{14, 21},
-							{18, 22},
-							{6, 23},
-						};
+        {0, 16},
+        {1, 12},
+        {2, 8},
+        {3, 4},
+        {5, 11},
+        {9, 15},
+        {13, 19},
+        {7, 17},
+        {10, 20},
+        {14, 21},
+        {18, 22},
+        {6, 23},
+    };
 
-	int cor_comb[8][3] = {
-					{0, 17, 4},
-					{1, 13, 16},
-					{2, 9, 12},
-					{3, 5, 8},
-					{6, 20, 11},
-					{10, 21, 15},
-					{14, 22, 19},
-					{7, 18, 23},
-				};
-    printf("Please start scanning with the red center on the front and the blue center on top\n");
+    int cor_comb[8][3] = {
+        {0, 17, 4},
+        {1, 13, 16},
+        {2, 9, 12},
+        {3, 5, 8},
+        {6, 20, 11},
+        {10, 21, 15},
+        {14, 22, 19},
+        {7, 18, 23},
+    };
+
+    printf("Input the colors in a clockwise direction starting from top-left (excluding the center) of the following faces in the mentioned configurations:\n");
+    printf("\tBlue   : Red on bottom\n");
+    printf("\tWhite  : Green on bottom\n");
+    printf("\tRed    : Green on bottom\n");
+    printf("\tYellow : Green on bottom\n");
+    printf("\tOrange : Green on bottom\n");
+    printf("\tGreen  : Orange on bottom\n");
     for (int i = 0; i < 24; i++)
     {
         scanf("%i", &cor[i][0]);
@@ -142,6 +152,6 @@ int input(int edge[][2], int cor[][3])
     edge[6][1] = edge[23][0];
 
     return 0;
-
-
 }
+
+#endif
